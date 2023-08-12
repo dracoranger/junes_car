@@ -1,0 +1,8 @@
+version=1
+title=JunesCar
+description=This is a realistic Kentucky truck added into the spawn pool
+description=
+description=The first world has a single 300x300-tile cell.
+description=The second world adds cells all around the first world.
+tags=
+visibility=private
