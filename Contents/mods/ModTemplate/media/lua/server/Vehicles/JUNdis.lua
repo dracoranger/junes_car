@@ -1,6 +1,6 @@
-local distributionTable = VehicleDistributions
+local distributionTable = VehicleDistributions[1]
 
-distributionTable.JunGlovebox = {
+VehicleDistributions.JunGlovebox = {
     rolls = 7,
     items = {
         "Pistol2", 1,
@@ -27,7 +27,7 @@ distributionTable.JunGlovebox = {
     }
 }
 
-distributionTable.JunTruckBed = {
+VehicleDistributions.JunTruckBed = {
     rolls = 4,
     items = {
         "Aerosolbomb", 10,
@@ -79,13 +79,15 @@ distributionTable.JunTruckBed = {
     }
 }
 
-distributionTable.Jun = {
-    TruckBed = distributionTable.JunTruckBed;
+VehicleDistributions.JUN = {
+    TruckBed = VehicleDistributions.JunTruckBed;
 
-    TruckBedOpen = distributionTable.JunTruckBed;
+    TruckBedOpen = VehicleDistributions.JunTruckBed;
 
-    GloveBox = distributionTable.GloveBox;
+    GloveBox = VehicleDistributions.GloveBox;
 
-    SeatRearLeft = distributionTable.Seat;
-    SeatRearRight = distributionTable.Seat;
+    SeatRearLeft = VehicleDistributions.Seat;
+    SeatRearRight = VehicleDistributions.Seat;
 }
+
+distributionTable["JUN"] = { Normal = VehicleDistributions.JUN; }
